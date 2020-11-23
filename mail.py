@@ -3,13 +3,21 @@
 
 # imports
 import smtplib
+import getpass
 import ssl 
 
 # using .starttls()
 smtp_server = "smtp.gmail.com"
 port = 587  # For starttls
 sender_email = "youngnillatest@gmail.com"
-password = input("Type your password and press enter: ")
+receiver_email = "youngnillatest@gmail.com"
+password = getpass.getpass(prompt='Password: ', stream=None)
+
+# message ?
+message = """\
+Subject: Hi there
+
+This message is sent from Python."""
 
 # Create a secure SSL context
 context = ssl.create_default_context()
@@ -22,6 +30,7 @@ try:
         server.ehlo() # Can be omitted
         server.login(sender_email, password)
         # TODO: Send email here
+        server.sendmail(sender_email, receiver_email, message)
 except Exception as e:
         # Print any error messages to stdout
         print(e)
