@@ -2,8 +2,9 @@
 # null-talisman 
 
 # imports 
-import robin_stocks as rs 
 import os 
+import datetime
+import robin_stocks as rs 
 
 # user info 
 robin_user = os.environ.get("robinhood_username")
@@ -17,6 +18,13 @@ def main():
              password=robin_pass, 
              expiresIn=86400, 
              by_sms=True)
+
+    # get current date and time
+    now = datetime.datetime.now()
+    print("******************")
+    print("DATE: " + now.strftime('%m-%d-%Y'))
+    print("TIME: " + now.strftime('%H:%M:%S'))
+    print("******************")
 
     # get current info of my stocks
     stock_list=['TMUS','BILI','KODK','MSFT','AAPL']
