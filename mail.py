@@ -2,6 +2,7 @@
 # @null-talisman
 
 # imports
+import datetime
 import smtplib
 import getpass
 import ssl 
@@ -13,11 +14,19 @@ sender_email = "youngnillatest@gmail.com"
 receiver_email = "youngnillatest@gmail.com"
 password = getpass.getpass(prompt='Password: ', stream=None)
 
-# message ?
-message = """\
-Subject: Hi there
+# get updated info
+info_file = open("update.txt", "r")
+update_info = info_file.read()
+#print(update_info)
 
-This message is sent from Python."""
+# message ?
+now = datetime.datetime.now()
+time_info = now.strftime('%m-%d %H:%M')
+message = """\
+Subject: Robinhood Update %s
+
+%s        .""" % (time_info, update_info)
+
 
 # Create a secure SSL context
 context = ssl.create_default_context()
