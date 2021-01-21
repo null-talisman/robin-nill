@@ -10,9 +10,10 @@ import ssl
 # using .starttls()
 smtp_server = "smtp.gmail.com"
 port = 587  # For starttls
+# enter desired email info
 sender_email = "youngnillatest@gmail.com"
 receiver_email = "youngnillatest@gmail.com"
-password = "Yahoo850!"
+password = "YouWish"
 # password = getpass.getpass(prompt='Password: ', stream=None)
 
 # get updated info
