@@ -1,0 +1,12 @@
+# add stocks to this file. keep this line. 
+TSLA
+MSFT
+AAPL
+KODK
+BILI
+TMUS
+NFLX
+FB
+DIS
+ORTX
+SNAP
