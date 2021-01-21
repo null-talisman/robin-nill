@@ -26,7 +26,7 @@ Alright, made some modifications to this project this morning. Quite a few notes
     Old Price: 371.15
     Change: %-55.19
   - After my_stocks.py checks for major change, it will send out an email if detected (in-progree) or simply update the prices in update.txt
-  - Update2.txt is useless. Ignore it. 
+  - Update2.txt is useless. Ignore it. Mail-2 is useless too. They'll be removed. 
   - I *have not* made changes to mail.py, prog.sh, or cron_cfg.txt. These files are essentially: 
       mail.py - python program for sending the email to specified email address
       prog.sh - shell script for running these python programs from linux CLI and managing files. 
