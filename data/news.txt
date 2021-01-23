@@ -1,0 +1,6 @@
+*****************************************************
+Significant change detected at 16:00:11
+Stock: TSLA
+Current Price: 846.55
+Old Price: 746.55
+Change: %-13.39
