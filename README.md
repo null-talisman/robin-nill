@@ -19,7 +19,7 @@ Alright, made some modifications to this project this morning. Quite a few notes
   - Robinhood user credentials are now stored in a .env file and read into my_stocks.py.
   - Removed the password for test Gmail account I had in here (youngnillatest@gmail.com).
   - Old prices are pulled from update.txt and compared against current prices when my_stocks.py runs. 
-  - If a significant change is detected (>= or <= 5% at the moment) then a note will be written to news.txt. For example: 
+  - If a significant change is detected (>= or <= 5% at the moment) then a note will be written to news.txt. For example (fake numbers): 
     Significant change detected
     Stock: NFLX
     Current Price: 576.0
@@ -38,6 +38,8 @@ Alright, made some modifications to this project this morning. Quite a few notes
  2. Iron out issues with cron job (I'm not sure if me using WSL is impacting this).
  3. Clean up comments. There are A TON of comments used for debugging. 
  4. Directory restructure. It's kind of a mess right now. 
+ 5. The authentication to your robinhood account expires after 24 hours (I think). So I'd like
+    to modify these to be longer.
  5. As of right now, utilizing this tool takes a little bit of work. I will eventually create some sort of documentation to help with the setup process and automate as much of that process as possible. In a perfect world, once complete, I'll publish this as a package to PyPI :) 
 
 
