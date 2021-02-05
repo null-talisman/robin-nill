@@ -40,7 +40,7 @@ Alright, made some modifications to this project this morning. Quite a few notes
   - Added update() function to my_stocks.py to update the update.txt file rather than relying on a shell script to overwrite it.
   - Moved sendEmail() into my_stocks.py because I am an ape. 
   - Refined output to email message and corrected logic for multiple changes.
-  - Added documentation on setup
+  - Added setup instructions in setup.md
   
  # On the Horizon
  - As of right now, utilizing this tool takes a little bit of work. I will eventually create some sort of documentation to help with the setup process and automate as much of that process as possible. In a perfect world, once complete, I'll publish this as a package to PyPI :) 
