@@ -33,7 +33,7 @@ Alright, made some modifications to this project this morning. Quite a few notes
       cron_cfg.txt - configuration settings for crons scheduler. this can be modifed by the user to modify the interval in which this tool runs. cron will essentially 
                 run the prog.sh script and run these python files in a logical order. (In-progree)
         
- #v0.3 notes
+ # v0.3 notes
  Today I focused up on cleaning up a lot of the code and concentrated on correctly sending emails when condition is met. 
   - Changed Robinhood authentication from 24 hrs to 1 week. 
   - Corrected logic on negative and positive price changes. 
