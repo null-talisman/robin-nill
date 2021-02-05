@@ -175,9 +175,9 @@ def sendEmail():
     smtp_server = "smtp.gmail.com"
     port = 587  # For starttls
     # enter desired email info
-    sender_email = "youngnillatest@gmail.com"
-    receiver_email = "youngnillatest@gmail.com"
-    password = "Yahoo850!"
+    sender_email = "youremail@gmail.com"
+    receiver_email = "youremail@gmail.com"
+    password = "Password123!"
     # password = getpass.getpass(prompt='Password: ', stream=None)
 
     # get updated info
