@@ -33,13 +33,23 @@ Alright, made some modifications to this project this morning. Quite a few notes
       cron_cfg.txt - configuration settings for crons scheduler. this can be modifed by the user to modify the interval in which this tool runs. cron will essentially 
                 run the prog.sh script and run these python files in a logical order. (In-progree)
         
+ #v0.3 notes
+ Today I focused up on cleaning up a lot of the code and concentrated on correctly sending emails when condition is met. 
+  - Changed Robinhood authentication from 24 hrs to 1 week. 
+  - Corrected logic on negative and positive price changes. 
+  - Added update() function to my_stocks.py to update the update.txt file rather than relying on a shell script to overwrite it.
+  - Moved sendEmail() into my_stocks.py because I am an ape. 
+  - Refined output to email message and corrected logic for multiple changes.
+  - Added documentation on setup
+  
  # On the Horizon
- 1. Verify email messages when a signicant change is detected. 
+ ~~1. Verify email messages when a signicant change is detected. 
  2. Iron out issues with cron job (I'm not sure if me using WSL is impacting this).
- 3. Clean up comments. There are A TON of comments used for debugging. 
+ ~~3. Clean up comments. There are A TON of comments used for debugging. 
  4. Directory restructure. It's kind of a mess right now. 
- 5. The authentication to your robinhood account expires after 24 hours (I think). So I'd like
-    to modify these to be longer.
+ ~~5. The authentication to your robinhood account expires after 24 hours (I think). So I'd like
+    to modify these to be longer.~~
  5. As of right now, utilizing this tool takes a little bit of work. I will eventually create some sort of documentation to help with the setup process and automate as much of that process as possible. In a perfect world, once complete, I'll publish this as a package to PyPI :) 
+ 6. I need to modulize this code. Ideally everything shouldn't be living in my_stocks.py. 
 
 
