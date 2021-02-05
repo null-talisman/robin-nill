@@ -20,5 +20,4 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
-MAILTO=""
-*/5 * * * 1-5 /home/tyler/robinhood/prog.sh 
+30 * * * * /home/tyler/robinhood/prog.sh 
