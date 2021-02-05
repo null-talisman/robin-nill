@@ -43,13 +43,13 @@ Alright, made some modifications to this project this morning. Quite a few notes
   - Added documentation on setup
   
  # On the Horizon
- ~~1. Verify email messages when a signicant change is detected. 
- 2. Iron out issues with cron job (I'm not sure if me using WSL is impacting this).
- ~~3. Clean up comments. There are A TON of comments used for debugging. 
- 4. Directory restructure. It's kind of a mess right now. 
+ ~~1. Verify email messages when a signicant change is detected. ~~
+ ~~2. Iron out issues with cron job (I'm not sure if me using WSL is impacting this).~~
+ ~~3. Clean up comments. There are A TON of comments used for debugging. ~~
+ ~~4. Directory restructure. It's kind of a mess right now. ~~
  ~~5. The authentication to your robinhood account expires after 24 hours (I think). So I'd like
     to modify these to be longer.~~
- 5. As of right now, utilizing this tool takes a little bit of work. I will eventually create some sort of documentation to help with the setup process and automate as much of that process as possible. In a perfect world, once complete, I'll publish this as a package to PyPI :) 
- 6. I need to modulize this code. Ideally everything shouldn't be living in my_stocks.py. 
+ 6. As of right now, utilizing this tool takes a little bit of work. I will eventually create some sort of documentation to help with the setup process and automate as much of that process as possible. In a perfect world, once complete, I'll publish this as a package to PyPI :) 
+ 7. I need to modulize this code. Ideally everything shouldn't be living in my_stocks.py. 
 
 
